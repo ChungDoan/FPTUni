@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form>
+            IDStudent: <input type="text" id="idStudent"> <br>
+            Fullname: <input type="text" id="name"> <br>
+            Gender: 
+            <select id="choose">
+                <option id="nam">Male</option>
+                <option id="nu">Female</option>
+            </select>
+            <br>
+            <button type="button" onclick="showData()">Submit</button>
+        </form>
+        <script>
+            function showData(){
+                var a, b, c;
+                a = document.getElementById("idStudent").value;
+                b = document.getElementById("name").value;
+                c = document.getElementById("choose").value;
+
+                var result = "ID: " + a + ", Full name: " + b + ", Gender: " + c;
+                document.write(result);
+            }
+        </script>
+    </body>
+</html>
+

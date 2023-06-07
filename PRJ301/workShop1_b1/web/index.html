@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <form action = 'bai1' method = 'post' id="frm">
+            <table>
+                <thead>
+                    <th colspan="2">TÌM MAX VÀ TÌM MIN</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nhap a:</td>
+                        <td><input type="number" name ="t1"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Nhap b:</td>
+                        <td><input type="number" name ="t2"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Nhap c:</td>
+                        <td><input type="number" name ="t3"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Ket qua:</td>
+                        <td><input type="number" name ="t4"></td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="radio" name="check1" value="max" id="check1">Tìm so lon nhat</td>
+                        <td><input type="radio" name="check2" value="min" id="check2">Tìm so nho nhat</td>
+                    </tr>
+
+                    <tr>
+                        <td><button onclick="find()" id="find" name="timKiem">Tìm</button></td>
+                        <td><button onclick ="del()" id="dele">Xóa</button></td>
+                    </tr>
+                </tbody>
+            </table> 
+        </form>
+        
+        <script>
+            function find() {
+                document.getElementById("frm").submit();
+            }
+            function del(){
+                document.getElementById("t1").value = "";
+                document.getElementById("t2").value = "";
+                document.getElementById("t3").value = "";
+                document.getElementById("t4").value = "";
+                document.getElementById("check1").checked = false;
+                document.getElementById("check2").checked = false;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="ws1" method ="post" id="calculationForm">
+            <table>
+                <thead><td colspan="3">THUC HIEN PHEP TOAN</td></thead>
+                <tbody>
+                    <tr>
+                        <td>Nhap n:</td>
+                        <td><input type="text" name="inputUser"></td>
+                        <td><p>&#40;1 &lt; n &lt; 100&#41;</p></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <p>Chon phep toan:</p> 
+                        </td>
+                        <td>
+                            <select name="problem" id="choose" onchange="showData()">
+                                <option value="tong" id="p1" name="tong">Tong n so lien tiep</option>
+                                <option value="giaiThua" id="p2" name="giaiThua">Tinh n!</option>
+                                <option value="le" id="p3" name="le">In day le</option>
+                                <option value="chan" id="p4" name="chan">In day so chan</option>
+                                <option value="soNguyenTo" id="p5" name="soNT">Kiem tra so nguyen to</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+<!--                    <tr>
+                        <td colspan="3">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>-->
+                    
+                </tbody>
+            </table>
+        </form>
+
+        <script>
+            function showData() {
+                document.getElementById("calculationForm").submit();
+            }
+        </script>
+    </body>
+</html>

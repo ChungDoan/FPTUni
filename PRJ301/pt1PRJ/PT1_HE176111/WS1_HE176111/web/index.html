@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1 style="color: blue;" >TH HIỆN PHÉP TOÁN</h1>
+        <form id="frm" action='ws1' method='get'>
+            <table>
+                <tr>
+                    <td style="color: blue; font-weight: bold;">Nhập n</td>
+                    <td><input type="text" name="n"></td>
+                    <td style="font-weight: bold;">(1 < n < 100)</td>
+                </tr>
+                <tr>
+                    <td style="color: blue; font-weight: bold;">Chọn phép toán</td>
+                    <td>
+                        <select name="action" id="action" onchange="change()">
+                            <option value="count">Tổng n số liên tiếp</option>
+                            <option value="factorial">Tính n!</option>
+                            <option value="odd">In dãy lẻ</option>
+                            <option value="even">In dãy số chẵn</option>
+                            <option value="prime">Kiểm tra số nguyên tố</option>
+                        </select>
+                    </td>
+                </tr>
+
+            </table>
+            
+        </form>
+        
+    
+        <script>
+            function change() {
+                document.getElementById("frm").submit();
+            }
+        </script>
+    </body>
+</html>
